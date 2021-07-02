@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test tu vung</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<style>
+		#k{
+			display: none;
+			height: 580px;
+			width: 100%;
+			border: 0;
+		}
+		#e{
+			height: 580px;
+			width: 100%;
+			border: 0;
+		}
+		#select
+		{
+			padding: 4px;
+			font-size: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="font-weight: bold;">KIỂM TRA TỪ VỰNG CHỦ ĐIỂM 2- BUỔI 5</h1>
+	<div class="main">
+		<select id="select" onchange="change()">
+			<option value="0">Kiểm tra tiếng Anh</option>
+			<option value="1">Kiểm tra tiếng Hàn</option>
+		</select>
+	</div><br/>
+	 	<script >
+			function change()
+			{
+				 var selValue = document.getElementById("select").value;
+				if(selValue == 1){
+				   	document.getElementById("k").style.display = "block";
+					document.getElementById("e").style.display = "none";
+				   }
+				else
+					{
+						document.getElementById("k").style.display = "none";
+						document.getElementById("e").style.display = "block";
+					}
+			}
+			function enterFullscreen(element) {
+    if (element.requestFullscreen) {
+        //Luôn thử phương thức không có prefix trước
+        element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT); // cho phép sử dụng bàn phím
+    } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+    }
+}
+			
+			function Ful()
+			{
+				launchFullScreen(document.getElementById("e")); // Chỉ một element #videoElement và các element con của nó
+							}
+        </script>
+	<!--Khung tiếng Anh-->
+	<div id="anh">
+	<iframe id="e" src="https://quizlet.com/603739745/match/embed?i=3rpgzc&x=1jj1"></iframe>
+	</div>
+	<!--Khung tiếng Hàn-->
+	<iframe id="k" src="https://quizlet.com/603745835/match/embed?i=3rpgzc&x=1jj1"></iframe>
+</body>
+</html>
