@@ -1,4 +1,5 @@
- let w=$(window).width();
+  Vue.config.devtools = true 
+let w=$(window).width();
 	if(w<=414){
 		alert("Use a wider screen for a better experience!");
 	}
