@@ -30,6 +30,9 @@ header .profileLogo .logoPlaceholder {
 	width: 187px;
 	text-align: center;
 }
+profilePhoto > img{
+border-radius: 100%;
+}
 header .logoPlaceholder span {
 	width: 80px;
 	height: 22px;
