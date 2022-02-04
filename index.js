@@ -43,7 +43,7 @@
 		},
 		methods:{
 			openg: function(){
-				open("https://www.miktae.github.io","_blank");
+				open("www.miktae.github.io","_blank");
 			}
 		}
 	});
