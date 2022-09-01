@@ -44,7 +44,7 @@ let w=$(window).width();
 		},
 		methods:{
 			openg: function(){
-				open("www.miktae.github.io","_blank");
+				open("/","_blank");
 			}
 		}
 	});
